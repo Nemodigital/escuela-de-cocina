@@ -1,3 +1,4 @@
+/* estilos generales */
 :root {
     --primario: #f46669;
     --secundario: #c7c57d;
@@ -6,4 +7,70 @@
 body {
     font-family: 'Roboto', sans-serif;
     color:#303030;
+}
+
+/* navegación */
+.nav-link,
+.nav-link:hover {
+    text-transform: uppercase;
+    color: black;
+}
+
+/* colores */
+.bg-primary{
+    background-color: var(--primario)!important;
+}
+.bg-secondary {
+    background-color: var(--secundario)!important;
+}
+/* imagenes portada */
+.bg-vino {
+    background-image: url(../img/principal1.jpg);
+}
+.bg-comida {
+    background-image: url(../img/principal2.jpg);
+}
+/* esta clase es para crecer ambas imagenes. Así no las repite en su caja y tambien las posiciono al centro*/
+.imagen {
+    background-size: cover;
+    background-position: center;
+}
+/* seleccionamos el primer div de imagen-superior e imagen-inferior */
+/* Este tamaño es para movil.Se verán un poco mas pequeñas */
+.imagen-superior > div,
+.imagen-inferior > div {
+    height: 30rem;
+} 
+/* creamos un media query para que se vean las imágenes grandes y más altas en pantalla grande y tablet */
+@media (min-width: 768px) {
+   /* seleccionamos el primer div de imagen-superior e imagen-inferior */
+    .imagen-superior > div,
+    .imagen-inferior > div {
+        height: 45rem;
+    } 
+}
+/* como aparecen las dos imágenes juntas en movil. Vamos a hacer que aparezca salteado texto e imagen */
+.imagen-inferior .bg-comida {
+    order: 1;
+}
+/* y para resoluciones más grandes deshabilitamos la opción order para que se vea salteado también, ya que se vería las dos imágenes una debajo de otra */
+@media (min-width: 768px) {
+    .imagen-inferior .bg-comida {
+        order: unset;
+    }
+}
+/* añadimos las lineas al texto de la portada */
+.imagen-superior .contenido {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+.imagen-inferior .contenido {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+/* texto */
+.contenido p {
+    font-size: 1.2rem;
+    font-weight: 100;
+    line-height: 2rem;
 }
