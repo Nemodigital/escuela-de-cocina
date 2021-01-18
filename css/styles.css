@@ -8,6 +8,11 @@ body {
     font-family: 'Roboto', sans-serif;
     color:#303030;
 }
+p {
+    font-weight: 100;
+    line-height: 3rem;
+    font-size: 1.2rem;
+}
 
 /* navegación */
 .nav-link,
@@ -73,4 +78,15 @@ body {
     font-size: 1.2rem;
     font-weight: 100;
     line-height: 2rem;
+}
+/* sección nosotros */
+.separador::after {
+    content: '';
+    display: block;
+    width: 300px;
+    height: 100px;
+    background-image: url(../img/separador.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 20px auto 0 auto;
 }
