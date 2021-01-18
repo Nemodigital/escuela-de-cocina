@@ -90,3 +90,32 @@ p {
     background-position: center center;
     margin: 20px auto 0 auto;
 }
+.nosotros .informacion h3 {
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+/* próximas clases */
+.clases {
+    background-color: var(--gris);
+}
+.card {
+    margin-bottom: 2rem;
+}
+.badge-secondary {
+    background-color: #c7c57d;
+}
+.card-meta {
+    font-weight: 700;
+}
+.card-subtitle {
+    color: var(--primario);
+    font-weight: 400;
+    line-height: 2rem;
+}
+.card-body p {
+    font-size: 1rem;
+    line-height: 2rem;
+}
+.card-body a {
+    color: var(--primario);
+}
