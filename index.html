@@ -17,14 +17,14 @@
                 <img src="img/logo.svg" class="img-fluid">
             </div>
             <div class="col">
-                <!-- en sm mostramos el menú en columna y en el resto en horizontal -->
+                <!-- en pantalla pequeña mostramos el menú en columna y en el resto en horizontal con flex-md-row-->
                 <!-- justify-content-end es para que esté a la derecha el menu -->
-                <div class="nav flex-column flex-md-row justify-content-end text-center">
+                <nav class="nav flex-column flex-md-row justify-content-end text-center">
                     <a href="#" class="nav-link">Nosotros</a>
                     <a href="#" class="nav-link">Clases</a>
                     <a href="#" class="nav-link">Galerías</a>
                     <a href="#" class="nav-link">Contacto</a>
-                </div>
+                </nav>
             </div>
         </div>
     </header> <!--fin header-->
@@ -230,6 +230,28 @@
     </div><!--fin licenciatura-->
     <!-- fin zona quieres ser chef -->
 
+    <!-- footer -->
+    <footer class="footer p-5">
+        <div class="container">
+            <!-- align-items-center es para centrar el menú con el copyright -->
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <nav class="nav flex-column flex-md-row text-center">
+                        <a href="#" class="nav-link">Nosotros</a>
+                        <a href="#" class="nav-link">Clases</a>
+                        <a href="#" class="nav-link">Galerías</a>
+                        <a href="#" class="nav-link">Contacto</a>
+                    </nav>
+                </div><!--fin col-md-6-->
+                <div class="col-md-6">
+                    <!-- ponemos  text-center para que una pantalla pequeña quede centrado y text-md-right para que en una pantalla más grande quede a la derecha-->
+                    <p class="m-0 copyright text-center text-md-right">
+                        Todos los derechos reservados
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

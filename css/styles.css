@@ -144,3 +144,11 @@ p {
     background-color: #eb3b3e;
     border-color: #eb3b3e;
 }
+/* footer */
+.footer {
+    border-bottom: 10px solid var(--primario);
+}
+.copyright {
+    font-weight: 700;
+    font-size: 1rem;
+}
